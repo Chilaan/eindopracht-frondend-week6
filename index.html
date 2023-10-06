@@ -1,0 +1,141 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+
+
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <img class="chicken" src="images/logo.jpg" alt="Company logo">
+            </div>
+            <div class="links">
+                <a href="#Home" href>Home</a>
+                <a href="#recipes-menu">Recipes</a>
+                <a href="#Form">Form</a>
+                <a href="#Privacy-and-Policy">Privacy and Policy</a>
+            </div>
+
+        </nav>
+
+        <header>
+                <img class="banner" src="images/bannerbakery.png" alt="background cakes">
+            <div class="centered">
+                <h1 id="Home">Cookery</h1>
+                <p>Unleash Your Inner Chef and Master Culinary Creations with these Mouthwatering Recipes!</p>
+
+                <button onclick="window.location.href='location'">More Recipes!</button>
+            </div>
+        </header>
+
+        <h2 id="recipes-menu">Recipes</h2>
+        <main>
+            <section id="sectionone">
+                <article class="peach">
+                    <div class="img-peach">
+                        <img src="images/cake.jpg" alt="peach">
+                    </div>
+                    <h2>Peach Cake</h2>
+                    <img src="images/ratingstars.png" alt="rating 5 stars" width="250px" height="70px">
+                    <p>This peach cake is a delightful combination of cuteness and deliciousness. The soft and moist
+                        layers
+                        of cake are infused with the natural sweetness of ripe peaches, tantalizing your taste buds with
+                        every bite. Topped with a luscious cream frosting and adorned with fresh peach slices, it's a
+                        visually charming treat that will leave you craving for more.</p>
+                    <div class="article-buttons">
+                        <button onclick="window.location.href='#link1'">Recipe</button>
+                    </div>
+                </article>
+
+                <article class="strawberry">
+                    <div class="img-strawberry">
+                        <img src="images/strawberry-cake.jpg" alt="strawberry cake">
+                    </div>
+                    <h2>Strawberry cake</h2>
+                    <img src="images/ratingstars.png" alt="rating 5 stars" width="250px" heigth="70px">
+                    <p>This small strawberry cake is absolutely adorable with its petite size and charming presentation.
+                        It
+                        exudes a delightful aroma of fresh strawberries, and the moist sponge cake layered with luscious
+                        strawberry cream is a true melt-in-your-mouth experience. Every bite is bursting with the sweet
+                        and
+                        tangy flavors of the perfectly ripe strawberries, making it a truly delicious treat for any
+                        dessert
+                        lover.</p>
+                    <div class="article-buttons">
+                        <button onclick="window.location.href='#link2'">Recipe</button>
+                    </div>
+                </article>
+
+                <article class="cherry">
+                    <div class="img-cherry">
+                        <img src="images/cherry-cake.jpg" alt="cherry cake">
+                    </div>
+                    <h2>Cherry cake</h2>
+                    <img src="images/ratingstars4.png" alt="rating 4 stars" width="250px" height="70px">
+                    <p>This cherry cake is not only cute but also incredibly delicious. The beautiful red cherries add a
+                        pop
+                        of color that instantly grabs your attention. With every bite, you'll experience the perfect
+                        balance
+                        of moist cake and sweet, juicy cherries. It's the perfect treat to satisfy your sweet tooth and
+                        brighten up any occasion.</p>
+                    <div class="article-buttons">
+                        <button onclick="window.location.href='#link3'">Recipe</button>
+                    </div>
+                </article>
+            </section>
+
+            <section id="sectiontwo">
+                <h2 id="Form">Form</h2>
+                <div class="contactform">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name*</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name*</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">Your E-mail*</label>
+                        <input type="text" id="email" name="email" placeholder="Your E-mail..">
+
+                        <form action="/action_page.php">
+                            <label for="birthday">Birthday*</label>
+                            <input type="date" id="birthday" name="birthday">
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+
+                        </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="copyrigth">
+                &copy; 2023 - Chilaan Tse
+            </div>
+            <div class="logos">
+                <img class="chicken" src="images/logo.jpg" alt="Company logo" width="80" height="55">
+            </div>
+            <div class="social-links">
+                <img class="socialmedia" src="images/socialmedia.jpg" alt="socialmedia">
+            </div>
+            <div class="privacy-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
+    </body>
+
+    </html>

@@ -1,0 +1,293 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0vw 0vh;
+}
+
+
+nav {
+  display: flex;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background-color: rgb(249, 225, 179);
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(252, 221, 153);
+}
+
+.links {
+  display: flex;
+  padding-top: 2vw 2vh;
+}
+
+.chicken {
+  border-radius: 50%;
+  padding: 1vw;
+  height: 10vh;
+  transition: transform 0,6s;
+}
+
+.chicken:hover {
+  transform: scale(1.1)
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  margin-top: 2vh;
+  padding: 1vw;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 229, 178);
+  height: 5vh;
+  width: 10vw;
+  border: 1px black solid;
+  border-radius: 40px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#recipes-menu {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+#sectionone {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  gap: 5vh;
+}
+
+article {
+  width: 30vw;
+}
+
+article p {
+  padding: 10px;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.img-peach img,
+.img-strawberry img,
+.img-cherry img {
+  border-style: groove;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+
+.peach,
+.strawberry,
+.cherry {
+  border-style: groove;
+  letter-spacing: 2px;
+}
+
+#sectiontwo {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right;
+  color: white;
+}
+
+h2 {
+  color: black;
+  font-size: 3rem;
+}
+
+label {
+  color: black;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1vw;
+  display: flex;
+}
+
+#subject {
+  width: 80vw;
+  margin-bottom: 2vw;
+}
+
+.article-button{
+  display: flex;
+  justify-content: center;
+}
+.article-buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+}
+
+.social-links {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#privacy-and-policy {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+
+footer {
+  border-top: 2px solid black;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrigth {
+  font-size: 1.2rem;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.socialmedia {
+  width: 150px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.privacy-links {
+  display: flex;
+  gap: 20px;
+}
+
+.privacy-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .centered {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+  }
+  .banner img {
+    position: relative;
+    z-index: -1;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 15vw;
+    font-size: 0.8rem;
+  }
+
+  .banner {
+    width: 100%;
+    height: 65vh;
+  }
+  
+  #recipes-menu {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+  }
+  
+  #sectionone {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 5vh;
+  }
+  
+  article {
+    width: 80vw;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  #sectiontwo {
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: cover;
+    background-position: center;
+  }
+  
+  #subject {
+    width: 90%;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
